@@ -8,7 +8,7 @@ function App() {
 
   const [number, setNumber] = useState(0);
   const [displayNumber, setDisplayNumber] = useState(number)
-  const [squareNumsList, setSquareNumList] = useState([]);
+  const [squareNumsList, setSquareNumList] = useState([[0,0]]);
 
   const handleOnChange = (e) => {
     const value = e.target.value;
