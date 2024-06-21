@@ -14,7 +14,7 @@ function App() {
     const value = e.target.value;
 
     // Check if the value is an integer
-    if (/^\d+$/.test(value) && parseInt(value, 10) < 1000000000) {
+    if (/^\d+$/.test(value) && parseInt(value, 10) <= 1000000000) {
       setNumber(parseInt(value, 10));
     } else if (value === '') {
       setNumber(0);
